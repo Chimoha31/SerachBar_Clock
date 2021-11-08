@@ -15,6 +15,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  /* display: none; */
+  visibility: hidden;
 }
 
 .search-input {
@@ -47,7 +50,7 @@ html {
   font-size: 1.5rem;
   position: absolute;
   top:1.7rem;
-  right: calc(50% + 16rem);
+  right: 3rem;
 }
 /* 検索アイコン */
 .search-input i {
