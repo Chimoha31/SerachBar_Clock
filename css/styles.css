@@ -18,6 +18,13 @@ html {
   opacity: 0;
   /* display: none; */
   visibility: hidden;
+  transition: all 0.5s;
+}
+
+.search-input-wrapper.change {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s 1s;
 }
 
 .search-input {
@@ -39,6 +46,7 @@ html {
   margin-right: 1rem;
 }
 
+
 /* ✖️のアイコン */
 .search-input i {
   font-size: 1.5rem;
@@ -51,13 +59,17 @@ html {
   position: absolute;
   top:1.7rem;
   right: 3rem;
+  animation: searchIconAnim2 0.5s forwards;
+}
 
+.search-icon.change {
   animation: searchIconAnim 1s forwards;
 }
+
 /* 検索アイコン */
-.search-input i {
+.search-icon i {
   color: #999;
-  cursor: pointer
+  cursor: pointer;
 }
 
 /* animation */
@@ -77,5 +89,14 @@ html {
   100% {
     top: 1.7rem;
     right: calc(50% + 16rem);
+  }
+}
+
+@keyframes searchIconAnim2 {
+  0% {
+    right: calc(50% + 16rem);
+  }
+  100% {
+    right: 3rem;
   }
 }
