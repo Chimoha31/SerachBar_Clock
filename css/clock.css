@@ -108,5 +108,12 @@ html {
 .arrows .second {
   background-color: #24cfe6;
   transform: rotate(270deg);
+}
 
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 3rem auto;
 }
