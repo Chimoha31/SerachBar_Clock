@@ -1,14 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Slide Show</title>
-  <link rel="stylesheet" href="css/slide.css">
-</head>
-<body>
-  <h1>Test</h1>
-  
-  <script src="js/slide.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slides Show</title>
+    <link rel="stylesheet" href="css/slide.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- 右矢印 -->
+    <div class="container">
+      <div class="slideshow-wrapper">
+        <div class="control left-arrow">
+          <div class="arrow">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+          </div>
+        </div>
+
+        <div class="slides">
+          <div class="slide slide-1">
+            <img src="images/slide-img-1.jpg" />
+          </div>
+          <div class="slide slide-2">
+            <img src="images/slide-img-2.jpg" />
+          </div>
+          <div class="slide slide-3">
+            <img src="images/slide-img-3.jpg" />
+          </div>
+        </div>
+
+        <!-- 左矢印 -->
+        <div class="control right-arrow">
+          <div class="arrow">
+            <div class="line line-3"></div>
+            <div class="line line-4"></div>
+          </div>
+        </div>
+
+        <div class="play-pause">
+          <i class="fas fa-play"></i>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/slide.js"></script>
+  </body>
 </html>

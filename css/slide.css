@@ -1,3 +1,47 @@
-h1 {
-  color: pink;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.slideshow-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+.slide img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.control {
+  position: absolute;
+  top: 0;
+  width: 15vw;
+  height: 100%;
+  background-color: rgba(92, 94, 97, 0.6);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
 }
